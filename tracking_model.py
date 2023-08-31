@@ -43,7 +43,7 @@ A model for tracking with SALT.
 
 
 import bisect
-import exceptions
+import custom_exceptions
 
 
 
@@ -192,7 +192,7 @@ class TrackingModel:
 
         if declination < self.declinations[0] or declination > self.declinations[-1]:
             message = f"The value {declination} lies outside the allowed range from {self.declinations[0]} to {self.declinations[-1]}"
-            raise exceptions.OutOfVisibilityRangeException(message)
+            raise custom_exceptions.OutOfVisibilityRangeException(message)
 
         i = bisect.bisect_right(self.declinations, declination) - 1
         if i == len(self.declinations) - 1:
