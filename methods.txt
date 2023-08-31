@@ -1,0 +1,36 @@
+METHODS TO IMPLIMENT:
+
+1. Real track time: time until repoint
+2. Distance from moon check AP docs
+
+
+Nice to haves
+1. Track times for given maximum moon phase
+2. Observing windows with max lunar Distance
+3. Calculate the track length
+
+USE UNITS
+
+
+Doc strings and documentations:
+Sphinx 
+Readme 
+
+Markdown .md 
+* JP examples
+
+
+
+IMPLIMENT UNITS INTO MODEL !!
+
+
+
+Fix non-private methods
+
+
+
+
+Break up classes and modules i.e model and tracklength functions
+
+
+import using __init__ 
